@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Price Calculator</title>
+</head>
+<body>
+    <h1>Rental Price Calculator</h1>
+    <form action="/calculate" method="post">
+        <label for="model">대여모델:</label>
+        <select id="model" name="model">
+            <option value="s24울트라">s24울트라</option>
+            <option value="s23울트라">s23울트라</option>
+            <option value="s22울트라">s22울트라</option>
+            <option value="Iphone 15 Pro Max">Iphone 15 Pro Max</option>
+            <option value="Iphone 15 Pro">Iphone 15 Pro</option>
+            <option value="Iphone 14 Pro">Iphone 14 Pro</option>
+        </select>
+        <br>
+        <label for="start_day">대여시작일:</label>
+        <select id="start_day" name="start_day">
+            <option value="월">월</option>
+            <option value="화">화</option>
+            <option value="수">수</option>
+            <option value="목">목</option>
+            <option value="금">금</option>
+            <option value="토">토</option>
+            <option value="일">일</option>
+        </select>
+        <br>
+        <label for="rental_days">대여 일:</label>
+        <select id="rental_days" name="rental_days">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+        <br>
+        <label for="review_discount">리뷰 할인 신청:</label>
+        <select id="review_discount" name="review_discount">
+            <option value="리뷰할인 미신청">리뷰할인 미신청</option>
+            <option value="리뷰할인 1개 신청">리뷰할인 1개 신청</option>
+            <option value="리뷰할인 2개 신청">리뷰할인 2개 신청</option>
+        </select>
+        <br>
+        <button type="submit">Calculate</button>
+    </form>
+</body>
+</html>
